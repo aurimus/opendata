@@ -1,0 +1,16 @@
+.done-true {
+  text-decoration: line-through;
+  opacity: 0.3;
+}
+
+.priority-1{
+  color: red;
+}
+
+.priority-2{
+  color: darkorange;
+}
+
+.priority-3{
+  color: green;
+}
