@@ -1,24 +1,5 @@
-<h2>Todo Companies</h2>
-<div ng-controller="TodoCtrl">
-  <div class="col-md-6">
-    <div>You have {{ remaining(1) }} high and {{ remaining() - remaining(1) }} lower priority tasks remaining out of total of {{todos.length}}.</div>
-    <ul class="list-unstyled">
-      <li ng-repeat="todo in todos | orderBy:'priority'">
-        <input type="checkbox" ng-model="todo.done"/>
-        <span class="done-{{todo.done}} priority-{{todo.priority}}">{{todo.text}}</span>
-      </li>
-    </ul>
-  </div>
-  
-  <div class="col-md-6">
-    <h3>Select companies to take action on later</h3>
-    <input type="text" ng-model="searchQuery">
-    <input type="submit" ng-click="performQuery()" value="Search">
-    <ul class="list-unstyled">
-      <li ng-repeat="company in companies">
-        <span ng-click="addTodo(company.navn)">{{company.navn}}</span>
-      </li>
-    </ul>
-  </div>
+<h2>Fishery map</h2>
+<div ng-controller="FishCtrl">
+
 
 </div>
